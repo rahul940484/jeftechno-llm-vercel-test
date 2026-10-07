@@ -1,0 +1,91 @@
+# JEF Techno
+
+> JEF Techno is a specialist electrical engineering company focused on the safety and reliability of electrical systems. Founded in 1994, JEF provides engineering consulting, audit services, and electrical protection and grounding solutions across India and international markets.
+
+## Company
+
+- [About JEF](https://jeftechno.com/about-us) — Company overview, history, expertise, technology and global presence.
+- [Leadership Team](https://jeftechno.com/leadership-team) — Leadership information.
+- [Our Presence](https://jeftechno.com/about-us) — Global locations and operating presence.
+- [About JEF FAQs](https://jeftechno.com/about-us/faq) — Frequently asked questions about JEF, its leadership, patents and technologies.
+
+## Services
+
+### Audit Services
+
+- [Audit Services](https://jeftechno.com/audit-services) — Electrical and fire safety audits, earthing health assessment, instrumentation earthing audits and related assessment services.
+- [Earthing Health Assessment](https://jeftechno.com/audit-services) — Assessment of existing earthing installations.
+- [Instrumentation Earthing System](https://jeftechno.com/instrumentation-earthing-studies) — Instrumentation earthing services for I&C systems.
+- [Lightning Protection Audit](https://jeftechno.com/audit-services) — Lightning protection assessment.
+- [Power Quality Studies](https://jeftechno.com/power-quality-studies) — Power quality assessment and studies.
+- [Electrical & Fire Safety](https://jeftechno.com/audit-services) — Electrical and fire safety audit services.
+
+### Consulting Services
+
+- [Consulting Services](https://jeftechno.com/consulting-services) — Electrical engineering consulting and power-system analysis services.
+- [Power System Studies](https://jeftechno.com/power-system-studies) — Power system studies using engineering simulation tools.
+- [Industrial Power System Studies](https://jeftechno.com/industrial) — Power system studies for industrial applications.
+- [Renewable Power System Studies](https://jeftechno.com/renewable) — Power system studies for renewable energy and grid integration.
+- [Earthing / Grounding Studies](https://jeftechno.com/earthing-system) — Earthing and grounding engineering studies.
+- [Lightning Protection Studies](https://jeftechno.com/lightning-protection-system) — Lightning protection system design and studies.
+- [EMI & EMC](https://jeftechno.com/emi-emc) — Electromagnetic interference and electromagnetic compatibility studies.
+- [Root Cause Analysis](https://jeftechno.com/root-cause-analysis) — Engineering root-cause analysis services.
+
+## Products
+
+- [Products](https://jeftechno.com/Products) — JEF electrical protection and engineering products.
+- [JEF Shield](https://jeftechno.com/Products/JEF-shield) — Patented automated lightning protection risk assessment software based on IEC 62305-2.
+- [CLPS](https://jeftechno.com/Products/clps-products) — Lightning protection products and systems.
+- [ESE Lightning Protection](https://jeftechno.com/Products/ese-lightning-protection) — Early streamer emission lightning protection solutions.
+- [Surge Protective Devices](https://jeftechno.com/Products/surge-protective-devices) — Surge protection solutions.
+- [Earthing Studies](https://jeftechno.com/Products/earthing-studies) — Earthing engineering solutions and studies.
+- [Lightning Protection Studies](https://jeftechno.com/Products/lightning-protection-studies) — Lightning protection engineering solutions.
+
+## Areas of Expertise
+
+JEF provides solutions for Transmission & Distribution Utilities, Oil & Gas, Infrastructure and other customers, including:
+
+- Earthing / Grounding Studies
+- Lightning Protection Studies
+- Power System Studies
+- Power Quality Studies
+- Instrumentation Earthing
+
+## Industries
+
+- [Industries](https://jeftechno.com/industries) — JEF solutions across industrial and infrastructure sectors.
+- Renewable Energy — Earthing audits, lightning protection systems and power system studies for solar and wind installations.
+- Manufacturing Plants — Electrical engineering services across automobile, steel, heavy industry, metro rail, hospitals, commercial buildings and warehouses.
+- Power Utilities — EHV/HV substation earthing, earth-grid simulation, lightning protection and power system studies.
+- Process Plants — Services for petrochemical, chemical, pharmaceutical, fertiliser, food and beverage facilities.
+- Data Centers — Lightning protection, earthing, surge protection, EMC management and power quality services.
+- Oil & Gas — Engineering services for offshore, onshore and related oil and gas infrastructure.
+
+## Technology & Patents
+
+JEF states that it has 9 granted patents across India, the United States and the European Union. Its proprietary technologies include JEF Shield, JEF Safety Audit Tool and JEF E-Build.
+
+## Key Company Facts
+
+- Founded: 1994
+- Experience: 30+ years
+- Countries served: 30+
+- Customers: 10K+
+- Granted patents: 9
+- Global HQ: Bengaluru, India
+- GCC HQ: Abu Dhabi, UAE
+
+## Resources
+
+- [Blogs](https://jeftechno.com/blogs) — JEF technical and industry content.
+- [FAQ](https://jeftechno.com/faq) — Frequently asked questions and answers.
+- [Contact](https://jeftechno.com/get-in-touch) — Contact JEF for enquiries.
+
+## Detailed AI Information
+
+- [JEF full AI-readable information](https://jeftechno.com/llms-full.txt) — Detailed structured information about JEF.
+- [JEF knowledge graph](https://jeftechno.com/ai/knowledge.json) — Machine-readable entities and relationships.
+
+## Notes
+
+This file is an AI-readable overview of publicly available JEF Techno website information. For detailed information, follow the relevant page links or consult `llms-full.txt`.

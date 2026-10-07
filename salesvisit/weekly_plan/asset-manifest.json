@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/salesvisit/weekly_plan/static/css/main.ef0e7ede.chunk.css",
+    "main.js": "/salesvisit/weekly_plan/static/js/main.c4c6dac9.chunk.js",
+    "main.js.map": "/salesvisit/weekly_plan/static/js/main.c4c6dac9.chunk.js.map",
+    "runtime-main.js": "/salesvisit/weekly_plan/static/js/runtime-main.167d9cb0.js",
+    "runtime-main.js.map": "/salesvisit/weekly_plan/static/js/runtime-main.167d9cb0.js.map",
+    "static/js/2.22edf625.chunk.js": "/salesvisit/weekly_plan/static/js/2.22edf625.chunk.js",
+    "static/js/2.22edf625.chunk.js.map": "/salesvisit/weekly_plan/static/js/2.22edf625.chunk.js.map",
+    "index.html": "/salesvisit/weekly_plan/index.html",
+    "precache-manifest.de9d73870a42966d542305297b3bae04.js": "/salesvisit/weekly_plan/precache-manifest.de9d73870a42966d542305297b3bae04.js",
+    "service-worker.js": "/salesvisit/weekly_plan/service-worker.js",
+    "static/css/main.ef0e7ede.chunk.css.map": "/salesvisit/weekly_plan/static/css/main.ef0e7ede.chunk.css.map",
+    "static/js/2.22edf625.chunk.js.LICENSE.txt": "/salesvisit/weekly_plan/static/js/2.22edf625.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.167d9cb0.js",
+    "static/js/2.22edf625.chunk.js",
+    "static/css/main.ef0e7ede.chunk.css",
+    "static/js/main.c4c6dac9.chunk.js"
+  ]
+}

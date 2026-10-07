@@ -1,0 +1,1106 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-10-07T03:34:59.188189Z",
+  "source": {
+    "organization": "JEF Techno / JEF Group",
+    "website": "https://jeftechno.com",
+    "modelReference": "Structure informed by the supplied Obrive knowledge.json; factual content is based on JEF public content supplied or reviewed for this project.",
+    "scope": "public"
+  },
+  "entityClassificationReport": {
+    "BUSINESS_PUBLIC": 30,
+    "DOCUMENT_PUBLIC": 4,
+    "FAQ_PUBLIC": 23
+  },
+  "entities": [
+    {
+      "id": "company:jef-techno",
+      "type": "company",
+      "canonicalUrl": "https://jeftechno.com/about-us",
+      "name": "JEF Techno / JEF Group",
+      "description": "Specialist electrical engineering company focused on the safety and reliability of electrical systems.",
+      "runtimeMetadata": {
+        "title": "JEF Techno / JEF Group",
+        "keywords": [
+          "JEF Techno",
+          "JEF Group",
+          "electrical engineering",
+          "earthing",
+          "lightning protection",
+          "power system studies"
+        ]
+      },
+      "contentRef": "https://jeftechno.com/llms-full.txt#company-jef-techno",
+      "relatedEntities": []
+    },
+    {
+      "id": "person:prashanth-bg",
+      "type": "person",
+      "canonicalUrl": "https://jeftechno.com/leadership-team",
+      "name": "Prashanth BG",
+      "description": "Chairman and Managing Director of JEF Group.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#person-prashanth-bg",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "leads"
+        }
+      ]
+    },
+    {
+      "id": "service:consulting-services",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/consulting-services",
+      "name": "Consulting Services",
+      "description": "Electrical engineering consulting and power-system analysis services.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-consulting-services",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        }
+      ]
+    },
+    {
+      "id": "service:audit-services",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/audit-services",
+      "name": "Audit Services",
+      "description": "Electrical and fire safety audits, earthing health assessment and instrumentation earthing audit services.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-audit-services",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        }
+      ]
+    },
+    {
+      "id": "service:power-system-studies",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/power-system-studies",
+      "name": "Power System Studies",
+      "description": "Power system studies for industrial, utility, infrastructure and renewable-energy applications.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-power-system-studies",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "industry:renewable-energy",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:manufacturing",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:power-utilities",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:oil-and-gas",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "service:industrial-power-system-studies",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/industrial",
+      "name": "Industrial Power System Studies",
+      "description": "Power system studies for industrial electrical systems and installations.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-industrial-power-system-studies",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "industry:manufacturing",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:process-plants",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "service:renewable-power-system-studies",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/renewable",
+      "name": "Renewable Power System Studies",
+      "description": "Power system studies for solar, wind, BESS, hybrid, green hydrogen and microgrid applications.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-renewable-power-system-studies",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "industry:renewable-energy",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "service:earthing-grounding-studies",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/earthing-system",
+      "name": "Earthing / Grounding Studies",
+      "description": "Earthing and grounding engineering studies and solutions.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-earthing-grounding-studies",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "industry:renewable-energy",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:power-utilities",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:process-plants",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:data-centers",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:oil-and-gas",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "service:earthing-health-assessment",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/audit-services/earthing-health-assessment",
+      "name": "Earthing Health Assessment",
+      "description": "Assessment of the integrity and condition of existing earthing systems.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-earthing-health-assessment",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "industry:power-utilities",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:data-centers",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:process-plants",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "service:instrumentation-earthing",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/instrumentation-earthing-studies",
+      "name": "Instrumentation Earthing",
+      "description": "Instrumentation earthing services for instrumentation and control systems.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-instrumentation-earthing",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "industry:process-plants",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "service:lightning-protection-studies",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/lightning-protection-system",
+      "name": "Lightning Protection Studies",
+      "description": "Lightning protection system design and engineering studies.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-lightning-protection-studies",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "industry:renewable-energy",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:power-utilities",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:data-centers",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:oil-and-gas",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "service:lightning-protection-audit",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/audit-services/lightning-protection-system-adequacy-audit",
+      "name": "Lightning Protection Audit",
+      "description": "Lightning Protection System adequacy and risk assessment audit services.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-lightning-protection-audit",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        }
+      ]
+    },
+    {
+      "id": "service:power-quality-studies",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/power-quality-studies",
+      "name": "Power Quality Studies",
+      "description": "Power quality assessment and engineering studies.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-power-quality-studies",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "industry:data-centers",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:process-plants",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "service:emi-emc",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/emi-emc",
+      "name": "EMI / EMC Studies",
+      "description": "Electromagnetic interference and compatibility studies, including AC interference analysis for pipelines.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-emi-emc",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "industry:process-plants",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:oil-and-gas",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "service:root-cause-analysis",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/root-cause-analysis",
+      "name": "Root Cause Analysis",
+      "description": "Engineering root-cause analysis for electrical system failures and recurring problems.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-root-cause-analysis",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "industry:oil-and-gas",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:power-utilities",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:manufacturing",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:process-plants",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:data-centers",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "service:electrical-fire-safety-audit",
+      "type": "service",
+      "canonicalUrl": "https://jeftechno.com/audit-services/electrical-and-fire-safety-audit",
+      "name": "Electrical & Fire Safety Audit",
+      "description": "Electrical and fire safety audit services using the JEF Safety Audit Tool.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#service-electrical-fire-safety-audit",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "industry:manufacturing",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        },
+        {
+          "id": "industry:process-plants",
+          "type": "industry",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "product:jef-shield",
+      "type": "product",
+      "canonicalUrl": "https://jeftechno.com/Products/JEF-shield",
+      "name": "JEF Shield",
+      "description": "Patented automated lightning protection risk assessment software to IEC 62305-2.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#product-jef-shield",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "service:lightning-protection-studies",
+          "type": "service",
+          "edgeType": "supports-service"
+        },
+        {
+          "id": "service:lightning-protection-audit",
+          "type": "service",
+          "edgeType": "supports-service"
+        }
+      ]
+    },
+    {
+      "id": "product:clps",
+      "type": "product",
+      "canonicalUrl": "https://jeftechno.com/Products/clps-products",
+      "name": "CLPS",
+      "description": "Lightning protection components and systems.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#product-clps",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        }
+      ]
+    },
+    {
+      "id": "product:ese-lightning-protection",
+      "type": "product",
+      "canonicalUrl": "https://jeftechno.com/Products/ese-lightning-protection",
+      "name": "ESE Lightning Protection",
+      "description": "Early Streamer Emission lightning protection solutions.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#product-ese-lightning-protection",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        }
+      ]
+    },
+    {
+      "id": "product:surge-protective-devices",
+      "type": "product",
+      "canonicalUrl": "https://jeftechno.com/Products/surge-protective-devices",
+      "name": "Surge Protective Devices",
+      "description": "Surge protection solutions for power, signal, data, telecommunications and related lines.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#product-surge-protective-devices",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "service:lightning-protection-studies",
+          "type": "service",
+          "edgeType": "supports-service"
+        }
+      ]
+    },
+    {
+      "id": "product:earthing-studies",
+      "type": "product",
+      "canonicalUrl": "https://jeftechno.com/Products/earthing-studies",
+      "name": "Earthing Studies",
+      "description": "Earthing engineering solutions and studies.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#product-earthing-studies",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "service:earthing-grounding-studies",
+          "type": "service",
+          "edgeType": "supports-service"
+        }
+      ]
+    },
+    {
+      "id": "product:lightning-protection-studies",
+      "type": "product",
+      "canonicalUrl": "https://jeftechno.com/Products/lightning-protection-studies",
+      "name": "Lightning Protection Studies",
+      "description": "Lightning protection engineering solutions.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#product-lightning-protection-studies",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "service:lightning-protection-studies",
+          "type": "service",
+          "edgeType": "supports-service"
+        }
+      ]
+    },
+    {
+      "id": "product:jef-e-build",
+      "type": "product",
+      "canonicalUrl": "https://jeftechno.com/about-us",
+      "name": "JEF E-Build",
+      "description": "Proprietary JEF technology identified by the company.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#product-jef-e-build",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        }
+      ]
+    },
+    {
+      "id": "product:jef-safety-audit-tool",
+      "type": "product",
+      "canonicalUrl": "https://jeftechno.com/audit-services/electrical-and-fire-safety-audit",
+      "name": "JEF Safety Audit Tool",
+      "description": "Proprietary JEF technology supporting electrical and fire safety audit activities.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#product-jef-safety-audit-tool",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "provided-by"
+        },
+        {
+          "id": "service:electrical-fire-safety-audit",
+          "type": "service",
+          "edgeType": "supports-service"
+        }
+      ]
+    },
+    {
+      "id": "industry:renewable-energy",
+      "type": "industry",
+      "canonicalUrl": "",
+      "name": "Renewable Energy",
+      "description": "Earthing audits, lightning protection systems and power system studies for renewable-energy installations.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#industry-renewable-energy",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "industry:manufacturing",
+      "type": "industry",
+      "canonicalUrl": "",
+      "name": "Manufacturing Plants",
+      "description": "Electrical engineering services across automobile, steel, heavy industry, metro rail, hospitals, commercial buildings and warehouses.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#industry-manufacturing",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "industry:power-utilities",
+      "type": "industry",
+      "canonicalUrl": "",
+      "name": "Power Utilities",
+      "description": "EHV/HV substation earthing, earth-grid simulation, lightning protection and power system studies.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#industry-power-utilities",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "industry:process-plants",
+      "type": "industry",
+      "canonicalUrl": "",
+      "name": "Process Plants",
+      "description": "Services for petrochemical, chemical, pharmaceutical, fertiliser, food and beverage facilities.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#industry-process-plants",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "industry:data-centers",
+      "type": "industry",
+      "canonicalUrl": "",
+      "name": "Data Centers",
+      "description": "Lightning protection, earthing, surge protection, EMC management and power quality services.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#industry-data-centers",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "industry:oil-and-gas",
+      "type": "industry",
+      "canonicalUrl": "",
+      "name": "Oil & Gas",
+      "description": "Engineering services for offshore platforms, artificial islands, subsea cable systems and onshore processing.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#industry-oil-and-gas",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "serves-industry"
+        }
+      ]
+    },
+    {
+      "id": "faq:f49120eb",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "What is JEF Techno / JEF Group?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-f49120eb",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:81064d4e",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "How many patents does JEF hold?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-81064d4e",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:3ee82f3d",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "Where is JEF Techno headquartered?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-3ee82f3d",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:0dbd7d3d",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "Who leads JEF Group?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-0dbd7d3d",
+      "relatedEntities": [
+        {
+          "id": "person:prashanth-bg",
+          "type": "person",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:34acbd48",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "What is JEF Shield?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-34acbd48",
+      "relatedEntities": [
+        {
+          "id": "product:jef-shield",
+          "type": "product",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:a08ffc0f",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "Do I need a Surge Protective Device if I already have an external Lightning Protection System?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-a08ffc0f",
+      "relatedEntities": [
+        {
+          "id": "product:surge-protective-devices",
+          "type": "product",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:142036cc",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "What is the difference between Type 1, Type 2 and Type 3 Surge Protective Devices?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-142036cc",
+      "relatedEntities": [
+        {
+          "id": "product:surge-protective-devices",
+          "type": "product",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:71461ef9",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "What types of electrical and communication lines require Surge Protection Devices?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-71461ef9",
+      "relatedEntities": [
+        {
+          "id": "product:surge-protective-devices",
+          "type": "product",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:f08d25b9",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "Why are Surge Protective Devices important for industrial and commercial electrical systems?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-f08d25b9",
+      "relatedEntities": [
+        {
+          "id": "product:surge-protective-devices",
+          "type": "product",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:fd222990",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "How do I choose the right Surge Protective Device for my electrical system?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-fd222990",
+      "relatedEntities": [
+        {
+          "id": "product:surge-protective-devices",
+          "type": "product",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:76843ed9",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "What is ESE (Early Streamer Emission) Lightning Protection?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-76843ed9",
+      "relatedEntities": [
+        {
+          "id": "product:ese-lightning-protection",
+          "type": "product",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:12e8d48b",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "How does an ESE Lightning Rod protect a large area?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-12e8d48b",
+      "relatedEntities": [
+        {
+          "id": "product:ese-lightning-protection",
+          "type": "product",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:77a054d7",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "What is the lightning-current testing capacity of the NIMBUS ESE Lightning Protection System?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-77a054d7",
+      "relatedEntities": [
+        {
+          "id": "product:ese-lightning-protection",
+          "type": "product",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:997b9aef",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "Does the NIMBUS ESE Lightning Rod comply with NFC 17-102?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-997b9aef",
+      "relatedEntities": [
+        {
+          "id": "product:ese-lightning-protection",
+          "type": "product",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:d31d9071",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "Our earth electrode resistance measurement shows a satisfactory value. Why do we need a Comprehensive Earthing Health Assessment?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-d31d9071",
+      "relatedEntities": [
+        {
+          "id": "service:earthing-health-assessment",
+          "type": "service",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:67bee100",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "Can an Earthing Health Assessment be carried out without requiring a power shutdown?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-67bee100",
+      "relatedEntities": [
+        {
+          "id": "service:earthing-health-assessment",
+          "type": "service",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:b6f3d3f5",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "What is the difference between an earth grid resistance test and a riser integrity test?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-b6f3d3f5",
+      "relatedEntities": [
+        {
+          "id": "service:earthing-health-assessment",
+          "type": "service",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:fc7de290",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "What happens if a Comprehensive Earthing Health Assessment identifies defective connections?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-fc7de290",
+      "relatedEntities": [
+        {
+          "id": "service:earthing-health-assessment",
+          "type": "service",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:de41665c",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "How often should a Comprehensive Earthing Health Assessment be carried out?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-de41665c",
+      "relatedEntities": [
+        {
+          "id": "service:earthing-health-assessment",
+          "type": "service",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:386a5d52",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "What is an acceptable earth resistance value, and how is low earth resistance achieved?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-386a5d52",
+      "relatedEntities": [
+        {
+          "id": "service:earthing-health-assessment",
+          "type": "service",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:4fd35ceb",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "Why is a Lightning Protection System (LPS) Audit necessary at regular intervals?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-4fd35ceb",
+      "relatedEntities": [
+        {
+          "id": "service:lightning-protection-audit",
+          "type": "service",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:5f48c9c8",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "Why is an LPS Audit becoming more crucial for modern facilities?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-5f48c9c8",
+      "relatedEntities": [
+        {
+          "id": "service:lightning-protection-audit",
+          "type": "service",
+          "edgeType": "belongs-to"
+        }
+      ]
+    },
+    {
+      "id": "faq:general-contact",
+      "type": "faq",
+      "canonicalUrl": "",
+      "name": "How can I contact JEF Techno?",
+      "description": null,
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#faq-general-contact",
+      "relatedEntities": []
+    },
+    {
+      "id": "document:llms-txt",
+      "type": "document",
+      "canonicalUrl": "https://jeftechno.com/llms.txt",
+      "name": "JEF AI Overview",
+      "description": "AI-readable overview of JEF Techno.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#document-llms-txt",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "describes"
+        }
+      ]
+    },
+    {
+      "id": "document:llms-full-txt",
+      "type": "document",
+      "canonicalUrl": "https://jeftechno.com/llms-full.txt",
+      "name": "JEF AI Full Information",
+      "description": "Detailed AI-readable information about JEF Techno.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#document-llms-full-txt",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "describes"
+        }
+      ]
+    },
+    {
+      "id": "document:knowledge-json",
+      "type": "document",
+      "canonicalUrl": "https://jeftechno.com/ai/knowledge.json",
+      "name": "JEF Structured Knowledge",
+      "description": "Machine-readable entities and relationships for JEF Techno.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#document-knowledge-json",
+      "relatedEntities": [
+        {
+          "id": "company:jef-techno",
+          "type": "company",
+          "edgeType": "describes"
+        }
+      ]
+    },
+    {
+      "id": "document:blogs",
+      "type": "document",
+      "canonicalUrl": "https://jeftechno.com/blogs",
+      "name": "JEF Blogs",
+      "description": "JEF technical and industry blog resources.",
+      "runtimeMetadata": null,
+      "contentRef": "https://jeftechno.com/llms-full.txt#document-blogs",
+      "relatedEntities": []
+    }
+  ]
+}

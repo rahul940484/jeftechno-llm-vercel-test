@@ -1,0 +1,41 @@
+import FAQPageComponent from "@/components/FAQPageComponent";
+
+const faqs = [{"q": "What is earthing study?", "a": "Earthing Study is the engineering process JEF Techno uses to protect structures, equipment and personnel, delivered in compliance with IS/IEC 62305."}, {"q": "Why is earthing study important?", "a": "Earthing Study reduces the risk of equipment damage, downtime, fire and injury caused by lightning strikes, earth faults or transient overvoltages in industrial and commercial facilities."}, {"q": "What standards apply to earthing study?", "a": "In India, earthing study follows IS/IEC 62305 and IS 3043; internationally JEF Techno also aligns with NFPA 780, IEEE 80 and IEC 62561 depending on the project location."}, {"q": "How much does earthing study cost?", "a": "Cost depends on facility size, soil/site conditions and scope; JEF Techno provides a free site assessment and itemized quote before starting earthing study."}, {"q": "How long does earthing study take?", "a": "A typical earthing study project takes 2-6 weeks from site survey to commissioning, depending on facility size and site access."}, {"q": "Who needs earthing study?", "a": "Factories, warehouses, data centers, substations, telecom towers, solar plants, commercial buildings and any facility handling critical or high-value equipment."}, {"q": "How often should earthing study be inspected?", "a": "JEF Techno recommends annual inspection of soil resistivity testing, with a full re-assessment every 3-5 years or after any major structural change."}, {"q": "Can earthing study be retrofitted to an existing building?", "a": "Yes — earthing study is commonly retrofitted; JEF Techno's team conducts a site survey to adapt the design to existing structural and access constraints."}, {"q": "What is the difference between earthing study and soil resistivity testing?", "a": "Earthing Study focuses on engineering study service covering soil resistivity testing, earth grid/mesh design, touch & step potential calculation and earthing system simulation for substations and industrial plants, while soil resistivity testing addresses a related but distinct engineering requirement — our consultants advise which (or both) your facility needs."}, {"q": "Does JEF Techno provide earthing study outside India?", "a": "Yes, JEF Techno delivers earthing study across the Middle East (UAE, Saudi Arabia, Qatar, Oman, Kuwait, Bahrain) and Southeast Asia (Singapore, Malaysia) in addition to India."}, {"q": "What documents are provided after earthing study?", "a": "A compliance report, test certificates, as-built drawings and a maintenance schedule are provided on completion."}, {"q": "Is earthing study mandatory by law?", "a": "Many jurisdictions require earthing study for industrial, high-occupancy or hazardous-area buildings under local fire/electrical codes — JEF Techno can confirm the exact requirement for your facility's location."}, {"q": "What software does JEF Techno use for earthing study?", "a": "Industry-standard tools such as ETAP, CDEGS/XGSLab and proprietary risk-assessment calculators aligned to IS/IEC 62305 are used for simulation and design."}, {"q": "What industries does JEF Techno serve for earthing study?", "a": "Manufacturing, oil & gas, data centers, warehousing/logistics (including clients such as Amazon), EPC/construction (L&T), agrochemicals (Syngenta), renewable energy and utilities."}, {"q": "How is earthing study priced — fixed fee or per site?", "a": "JEF Techno typically quotes per site/facility based on scope, with fixed-fee options available for multi-site or annual maintenance contracts."}, {"q": "What is earthing system design software?", "a": "Earthing Study is the engineering process JEF Techno uses to protect structures, equipment and personnel, delivered in compliance with IS/IEC 62305."}, {"q": "Why is earthing study important?", "a": "Earthing Study reduces the risk of equipment damage, downtime, fire and injury caused by lightning strikes, earth faults or transient overvoltages in industrial and commercial facilities."}, {"q": "What standards apply to soil resistivity testing?", "a": "In India, earthing study follows IS/IEC 62305 and IS 3043; internationally JEF Techno also aligns with NFPA 780, IEEE 80 and IEC 62561 depending on the project location."}, {"q": "How much does earth grid design cost?", "a": "Cost depends on facility size, soil/site conditions and scope; JEF Techno provides a free site assessment and itemized quote before starting earthing study."}, {"q": "How long does earthing system design software take?", "a": "A typical earthing study project takes 2-6 weeks from site survey to commissioning, depending on facility size and site access."}, {"q": "Who needs earthing study?", "a": "Factories, warehouses, data centers, substations, telecom towers, solar plants, commercial buildings and any facility handling critical or high-value equipment."}, {"q": "How often should soil resistivity testing be inspected?", "a": "JEF Techno recommends annual inspection of soil resistivity testing, with a full re-assessment every 3-5 years or after any major structural change."}, {"q": "Can earth grid design be retrofitted to an existing building?", "a": "Yes — earthing study is commonly retrofitted; JEF Techno's team conducts a site survey to adapt the design to existing structural and access constraints."}, {"q": "What is the difference between earthing system design software and soil resistivity testing?", "a": "Earthing Study focuses on engineering study service covering soil resistivity testing, earth grid/mesh design, touch & step potential calculation and earthing system simulation for substations and industrial plants, while soil resistivity testing addresses a related but distinct engineering requirement — our consultants advise which (or both) your facility needs."}, {"q": "Does JEF Techno provide earthing study outside India?", "a": "Yes, JEF Techno delivers earthing study across the Middle East (UAE, Saudi Arabia, Qatar, Oman, Kuwait, Bahrain) and Southeast Asia (Singapore, Malaysia) in addition to India."}, {"q": "What documents are provided after soil resistivity testing?", "a": "A compliance report, test certificates, as-built drawings and a maintenance schedule are provided on completion."}, {"q": "Is earth grid design mandatory by law?", "a": "Many jurisdictions require earthing study for industrial, high-occupancy or hazardous-area buildings under local fire/electrical codes — JEF Techno can confirm the exact requirement for your facility's location."}, {"q": "What software does JEF Techno use for earthing system design software?", "a": "Industry-standard tools such as ETAP, CDEGS/XGSLab and proprietary risk-assessment calculators aligned to IS/IEC 62305 are used for simulation and design."}, {"q": "What industries does JEF Techno serve for earthing study?", "a": "Manufacturing, oil & gas, data centers, warehousing/logistics (including clients such as Amazon), EPC/construction (L&T), agrochemicals (Syngenta), renewable energy and utilities."}, {"q": "How is soil resistivity testing priced — fixed fee or per site?", "a": "JEF Techno typically quotes per site/facility based on scope, with fixed-fee options available for multi-site or annual maintenance contracts."}];
+
+export const metadata = {
+  title: "Earthing Studies — FAQs | JEF Techno",
+  description: "Find answers to the most frequently asked questions about Earthing Studies. JEF Techno's expert answers on electrical engineering services.",
+  alternates: {
+    canonical: "https://www.jeftechno.com/Products/earthing-studies/faq",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((f) => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": f.a,
+    },
+  })),
+};
+
+export default function FAQPage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <FAQPageComponent
+        title="Earthing Studies — FAQs"
+        parentTitle="Earthing Studies"
+        parentPath="/Products/earthing-studies"
+        faqs={faqs}
+      />
+    </>
+  );
+}

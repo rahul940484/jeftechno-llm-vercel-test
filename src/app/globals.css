@@ -1,0 +1,339 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: var(--font-montserrat);
+}
+
+@theme {
+  --color-brand: #FF0000;
+  --color-red-50: #FF0000;
+  --color-red-100: #FF0000;
+  --color-red-200: #FF0000;
+  --color-red-300: #FF0000;
+  --color-red-400: #FF0000;
+  --color-red-500: #FF0000;
+  --color-red-600: #FF0000;
+  --color-red-700: #FF0000;
+  --color-red-800: #FF0000;
+  --color-red-900: #FF0000;
+  --color-red-950: #FF0000;
+}
+
+html {
+  background-color: #000;
+}
+
+body {
+  font-family: var(--font-sans), sans-serif;
+  background-color: #000;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 81%;
+  /* Adjusts to the exact size of the right-side content */
+  position: relative;
+}
+
+.slides-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  /* Smooth slide transition */
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.testimonial-slider {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  position: relative;
+}
+
+.testimonial-slide {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.testimonial-text {
+  width: 100%;
+  padding: 0 1rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+#goog-gt-tt,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
+  visibility: hidden !important;
+  display: none !important;
+}
+
+/* @keyframes slideIn {
+    from { opacity: 0; transform: translateX(220%); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .X-axis-card-anm {
+    animation: slideIn 1s ease forwards;
+  }
+
+  .X-axis-card-anm {VIpgJd-ZVi9od-aZ2wEe-wOHMyf 
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+   */
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Add this CSS for the line animation */
+.nav-item {
+  position: relative;
+  display: inline-block;
+  /* Add some space for the line */
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -2.8rem;
+  /* Set the gap between text and line */
+  left: 0;
+  width: 100%;
+  /* Full width of the menu item */
+  height: 2px;
+  /* Thickness of the line */
+  background-color: #ff0000;
+  /* Line color */
+  transform: scaleX(0);
+  /* Start hidden */
+  transform-origin: left;
+  /* Animate from left to right */
+  transition: transform 0.3s ease;
+  /* Smooth animation */
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+  /* Show the line on hover */
+}
+
+.X-axis-card-anm-footer {
+  opacity: 0;
+}
+
+.table-container-mobile {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+.table-container-laptop {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  background-color: var(--color-brand);
+  color: #fff;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: center !important;
+}
+
+td {
+  color: #000;
+}
+
+th {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 4px 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 430px) {
+  td {
+    padding: 2px 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  th {
+    padding: 4px 10px !important;
+  }
+
+  .table-container-laptop {
+    display: block !important;
+  }
+
+  .table-container-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  th {
+    padding: 10px 10px !important;
+    width: 75%;
+  }
+
+  .table-container-mobile {
+    display: block !important;
+  }
+
+  .table-container-laptop {
+    display: none !important;
+  }
+
+  .mobile-head {
+    background-color: var(--color-brand) !important;
+    color: #fff !important;
+  }
+}
+
+.X-axis-card-anm-footer {
+  opacity: 0;
+}
+
+button {
+  cursor: pointer !important;
+}
+
+.invisible-xl-placeholder {
+  display: none !important;
+  cursor: default !important;
+}
+
+@media (min-width: 1280px) {
+  .invisible-xl-placeholder {
+    display: block !important;
+    opacity: 0 !important;
+  }
+}
+
+@keyframes progressBar {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.animate-progress {
+  animation: progressBar 5s linear forwards;
+}
+
+
+/* .scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+} */
+@keyframes ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.animate-ripple {
+  animation: ripple 700ms ease-out forwards;
+}
+
+.section-container {
+  @apply w-full max-w-[1920px] mx-auto px-6 sm:px-12 md:px-20 lg:px-32;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}

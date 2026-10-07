@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /*?utm_*
+Disallow: /search-results
+
+Sitemap: https://www.jeftechno.com/sitemap.xml

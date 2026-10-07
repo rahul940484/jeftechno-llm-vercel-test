@@ -1,0 +1,25 @@
+name: Deploy the Website
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  ssh-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy in VPS
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: 22
+          timeout: 30s
+          command_timeout: 10m
+          script: |
+            echo "SSH connection successful!"
+            cd /home/admin
+            chmod +x jefgroup.sh
+            ./jefgroup.sh

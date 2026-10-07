@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/salesvisit/checkout/static/css/main.ef0e7ede.chunk.css",
+    "main.js": "/salesvisit/checkout/static/js/main.c9d143a0.chunk.js",
+    "main.js.map": "/salesvisit/checkout/static/js/main.c9d143a0.chunk.js.map",
+    "runtime-main.js": "/salesvisit/checkout/static/js/runtime-main.4f993f76.js",
+    "runtime-main.js.map": "/salesvisit/checkout/static/js/runtime-main.4f993f76.js.map",
+    "static/js/2.d62ebe42.chunk.js": "/salesvisit/checkout/static/js/2.d62ebe42.chunk.js",
+    "static/js/2.d62ebe42.chunk.js.map": "/salesvisit/checkout/static/js/2.d62ebe42.chunk.js.map",
+    "index.html": "/salesvisit/checkout/index.html",
+    "precache-manifest.34f4443ad4ff18e7826d833832785aca.js": "/salesvisit/checkout/precache-manifest.34f4443ad4ff18e7826d833832785aca.js",
+    "service-worker.js": "/salesvisit/checkout/service-worker.js",
+    "static/css/main.ef0e7ede.chunk.css.map": "/salesvisit/checkout/static/css/main.ef0e7ede.chunk.css.map",
+    "static/js/2.d62ebe42.chunk.js.LICENSE.txt": "/salesvisit/checkout/static/js/2.d62ebe42.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f993f76.js",
+    "static/js/2.d62ebe42.chunk.js",
+    "static/css/main.ef0e7ede.chunk.css",
+    "static/js/main.c9d143a0.chunk.js"
+  ]
+}
