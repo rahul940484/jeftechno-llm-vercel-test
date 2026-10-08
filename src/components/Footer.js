@@ -44,6 +44,7 @@ function MainFooter() {
     const itemsLocation = [
         { name: 'India', path: 'https://www.jeftechno.com/' },
         { name: 'UAE', path: 'https://www.jeftechno.com/', newTab: true },
+        { name: 'Pan India', path: '/location' },
 
     ];
 
