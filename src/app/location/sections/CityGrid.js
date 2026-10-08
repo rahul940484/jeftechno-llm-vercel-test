@@ -11,8 +11,8 @@ export default function CityGrid() {
         Explore by City
       </h2>
       <p className="mt-3 max-w-2xl text-base text-neutral-700">
-        Discover information, resources and opportunities across India. Select
-        a city to find what&apos;s relevant for your business needs.
+        Discover information, resources and opportunities across India. Select a
+        city to find what&apos;s relevant for your business needs.
       </p>
 
       {/* City cards */}
@@ -20,11 +20,16 @@ export default function CityGrid() {
         {cities.map((city) => (
           <Link
             key={city.slug}
-            href={`/pan-india/${city.slug}`}
+            href={`/location/${city.slug}`}
             className="group flex items-center justify-between rounded-lg border border-neutral-300 bg-white px-6 py-6 transition hover:border-red-600 hover:shadow-md"
           >
             <span className="flex items-center gap-4">
-              <MapPin className="h-6 w-6 shrink-0 fill-red-600 text-red-600" />
+              <img
+                src="/PanIndia/PinIcon.svg"
+                alt=""
+                aria-hidden="true"
+                className="h-8 w-8 shrink-0"
+              />
               <span className="text-base font-normal uppercase text-neutral-900 md:text-lg">
                 {city.name}
               </span>
