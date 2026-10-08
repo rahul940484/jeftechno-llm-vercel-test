@@ -1,5 +1,8 @@
 # JEF Techno — Full AI-Readable Information
 
+Build ID: jef-ai-knowledge-2026-10-08-v2.0.0
+Generated: 2026-10-08T04:53:51Z
+
 ## 1. Company Overview
 
 JEF Techno / JEF Group is a specialist electrical engineering company focused on the safety and reliability of electrical systems.
@@ -38,9 +41,9 @@ The company's areas of expertise include:
 
 JEF's website presents three major business categories:
 
-### 4.1 Products
+### 4.1 Products and market offerings
 
-JEF provides electrical protection and engineering products and solutions, including:
+JEF provides electrical protection and engineering products and solutions. Services and proprietary technologies are represented separately in the structured AI knowledge layer; they should not be interpreted as products merely because they appear in a business category.
 - CLPS
 - Earthing / Grounding solutions
 - ESE lightning protection
@@ -319,470 +322,71 @@ This document is intended to provide AI systems with a detailed, structured repr
 
 Company figures, locations, leadership information, service descriptions, product descriptions and FAQ answers should be treated as website-derived information and should be updated when the corresponding JEF website content changes.
 
-## 22. Root Cause Analysis
+[[anchor:software-tools]]
+[[anchor:standards]]
+[[anchor:global-presence]]
+[[anchor:source-accuracy-notes]]
+[[anchor:ai-routing]]
 
-JEF provides Root Cause Analysis (RCA) services for electrical system failures, recurring faults, inefficiencies and system breakdowns.
+## 22. AI Knowledge Layer v2
 
-The purpose of the RCA service is to identify underlying causes, prevent recurring problems and improve system reliability, safety and performance.
+Build ID: jef-ai-knowledge-2026-10-08-v2.0.0
 
-JEF identifies the following benefits of Root Cause Analysis:
-- Minimizing downtime by addressing the underlying causes of failures
-- Enhancing safety by reducing risks associated with electrical faults
-- Reducing repair and maintenance costs by preventing recurring problems
-- Optimizing electrical system performance and reliability
+The three public AI-readable artifacts are intended to represent one consistent knowledge model:
+- `llms.txt` — concise AI index.
+- `llms-full.txt` — detailed human-readable source-of-truth narrative.
+- `ai/knowledge.json` — typed, machine-readable knowledge graph.
 
-JEF describes its RCA approach as:
-- Electrical fault investigation and system optimization by experienced engineers
-- A systematic approach to identifying, analyzing and resolving root causes
-- Industry-specific and customized action plans
-- Solutions intended to improve reliability and reduce downtime
+### 22.1 Entity taxonomy
 
-### Root Cause Analysis — Industry Applications
+The structured model separates:
+- company
+- person
+- location
+- service
+- product
+- technology
+- software_tool
+- industry
+- standard
+- claim
+- intent
+- action
+- FAQ
+- document
 
-JEF identifies RCA applications across:
-- Oil & Gas
-- Power Utilities
-- Manufacturing
-- Process Plants
-- Warehouses and Commercial Buildings
+JEF E-Build is represented as a proprietary technology and JEF Safety Audit Tool as a software/tool entity rather than as physical products. JEF services and market offerings remain in separate namespaces.
 
-For Oil & Gas applications, RCA addresses equipment malfunctions and grounding-system inefficiencies in hazardous environments.
+### 22.2 Intent → service/product → action
 
-For Power Utilities, RCA can be applied to failures involving substations, transmission lines and grid systems.
+The knowledge graph maps common buyer jobs to JEF entities and supported next actions. Examples include:
+- Check an existing earthing system → Earthing Health Assessment → open service / request consultation.
+- Assess lightning risk → Lightning Protection Audit or JEF Shield → open service/product / request consultation.
+- Investigate recurring electrical failures → Root Cause Analysis → open service / request consultation.
+- Study a solar, wind, BESS or hybrid plant → Renewable Power System Studies → open service / request consultation.
+- Select or understand surge protection → Surge Protective Devices → open product / contact JEF.
+- Investigate instrumentation grounding/noise issues → Instrumentation Earthing → open service / request consultation.
 
-For Manufacturing, RCA addresses issues in power distribution and automation systems.
+These mappings describe routing intent; they do not constitute a technical design recommendation without project-specific engineering review.
 
-For Process Plants, RCA addresses electrical safety risks and system-performance issues.
+### 22.3 Standards representation
 
-For Warehouses and Commercial Buildings, RCA can investigate power outages, grounding faults and lightning-protection-system failures.
+Where standards are referenced, the knowledge graph records the standard code, edition where supported, jurisdiction, applicability context and first-party provenance. JEF references standards in the context of its published engineering services and products; the AI layer must not convert a reference into a universal compliance claim.
 
-### Root Cause Analysis FAQs
+### 22.4 Evidence and claim controls
 
-#### What is Root Cause Analysis (RCA) for electrical system failures?
+Material company metrics, performance figures, experience figures and technical claims have claim-level provenance with source URL and verification date. The preferred wording for company assertions is “JEF states...”. Missing or unanswered information must remain unanswered rather than being filled from model knowledge.
 
-JEF provides RCA to investigate electrical system failures and identify their underlying causes so that recurring problems can be addressed.
+### 22.5 URL and lifecycle rules
 
-#### Why is Root Cause Analysis important for reducing electrical system downtime?
+- Every leaf service and product has one canonical URL.
+- Abstract industry concepts use `canonicalUrl: null` with a parent/source URL when no verified leaf page exists.
+- FAQ entities use the verified JEF FAQ page as their canonical resource and keep individual question anchors in `contentRef`.
+- Company metrics, office information and product/service specifications are periodic data and should be re-verified before each production release.
 
-RCA helps identify the underlying causes of recurring electrical failures so corrective actions can reduce repeated disruptions and downtime.
+### 22.6 Release contract
 
-#### What types of electrical problems can JEF Techno investigate through Root Cause Analysis?
+All three artifacts must share the same build ID. Before production publication, validate JSON structure and unique IDs, check canonical URLs, resolve every `contentRef`, verify service/product coverage, detect taxonomy collisions, validate standard metadata and run the AI regression question set described below.
 
-JEF's RCA offering addresses electrical faults, recurring failures, equipment-related problems, grounding issues, power-distribution problems and lightning-protection-system failures depending on the application.
+Expected behavior: identify the correct service/product/industry entity, use the canonical URL, cite or rely on first-party evidence, and distinguish JEF claims from independent facts.
 
-#### Which industries can benefit from Electrical Root Cause Analysis services?
-
-JEF identifies Oil & Gas, Power Utilities, Manufacturing, Process Plants, Warehouses and Commercial Buildings among the application areas for its RCA services.
-
-#### How does JEF Techno perform Root Cause Analysis for electrical system problems?
-
-JEF describes its approach as a systematic investigation involving experienced engineers, analysis of the problem and development of customized corrective actions.
-
-Source:
-https://jeftechno.com/root-cause-analysis
-
-
-## 23. Renewable Power System Studies
-
-JEF provides Power System Studies for renewable-energy applications including:
-- Solar PV
-- Wind
-- Battery Energy Storage Systems (BESS)
-- Hybrid plants
-- Green hydrogen plants
-- Microgrids
-
-JEF states that it has experience with grid codes of several countries and provides power-system analysis for new and existing plants.
-
-### Software and Engineering Tools
-
-JEF identifies expertise and licences for major power-system software including:
-- PSS/E
-- PSCAD
-- DIgSILENT
-- ETAP
-- EMTP-RV
-- CDEGS
-
-JEF states that its studies can address:
-- Steady-state issues
-- Dynamic issues
-- Electromagnetic transient (EMT) issues
-- Harmonic issues
-
-### Renewable Power System Studies — FAQs
-
-#### What are Power System Studies for Renewable Energy Projects?
-
-Power System Studies for renewable projects analyse the electrical behaviour and performance of renewable-energy plants and their connection to the grid.
-
-#### What types of Renewable Energy Power System Studies does JEF Techno provide?
-
-JEF provides power-system studies for Solar PV, Wind, BESS, Hybrid, Green Hydrogen and Microgrid applications.
-
-#### Why are Grid Code Studies important for Solar, Wind and BESS Projects?
-
-Grid-code studies help evaluate the electrical performance of renewable-energy projects against the applicable requirements of the grid to which they connect.
-
-#### What is the difference between Steady-State, Dynamic, EMT and Harmonic Studies for Renewable Energy Plants?
-
-These studies analyse different electrical operating conditions and behaviours, including steady-state operation, dynamic response, electromagnetic transients and harmonic performance.
-
-#### Which software does JEF Techno use for Renewable Energy Power System Studies?
-
-JEF identifies PSS/E, PSCAD, DIgSILENT, ETAP, EMTP-RV and CDEGS among its software capabilities.
-
-Source:
-https://jeftechno.com/renewable
-
-
-## 24. Industrial Power System Studies
-
-JEF provides Power System Studies for industrial electrical systems and installations.
-
-The broader JEF Power System Studies capability covers electrical-system analysis using:
-- ETAP
-- PSCAD/EMTDC
-- PSS/E
-- DIgSILENT
-- SKM
-- DSA Tools
-
-JEF describes its power-system study capability as covering the analysis of electrical systems from steady-state studies through electromagnetic transient analysis.
-
-The website identifies study areas including:
-- Reactor sizing
-- Surge arrestor study
-- OLTC / AVR dynamic study
-- Subsea cable electromagnetic interference
-- PSS/E network modelling
-
-JEF's power-system studies are used across industrial, utility, infrastructure and renewable-energy applications.
-
-Source:
-https://jeftechno.com/industrial
-https://jeftechno.com/power-system-studies
-
-
-## 25. Earthing Health Assessment
-
-JEF provides Earthing Health Assessment for evaluating the integrity and condition of existing earthing systems.
-
-JEF describes a limitation of conventional earthing assessment: measuring earth-electrode resistance alone may not identify local defects such as:
-- Corroded joints
-- Disconnected risers
-- Isolated grid sections
-- Open or high-resistance connections
-
-Because a ground grid contains multiple parallel current paths, a satisfactory overall earth-resistance measurement may exist even when individual equipment or structures have defective connections to the earthing grid.
-
-JEF's Earthing Health Assessment is designed to identify these location-specific deficiencies.
-
-### JEF Earthing Health Assessment Approach
-
-JEF identifies the following characteristics:
-- Assessment rather than only testing
-- Testing designed for live systems
-- Location-specific identification of deficiencies
-- Earth-grid modelling and simulation
-
-JEF states that CDEGS modelling can produce quantitative assessments of:
-- Ground Potential Rise (GPR)
-- Touch-potential distribution
-- Step-potential profiles
-
-### Earthing Health Assessment Deliverables
-
-JEF identifies the following deliverables:
-- Detailed engineering report
-- Site photographic record
-- Identified anomalies and defects
-- Protection-system assessment
-- Corrective-action plan
-- Earth-grid simulation outputs where modelling is performed
-- Compliance verification
-
-JEF states that its experience includes 300,000 riser connections across 18 countries and 400 substations ranging from 33 kV to 765 kV, process plants and other critical installations.
-
-### Earthing Health Assessment FAQs
-
-#### Our earth electrode resistance measurement shows a satisfactory value. Why do we need a Comprehensive Earthing Health Assessment?
-
-A satisfactory earth-electrode resistance measurement does not necessarily demonstrate the integrity of every connection in a ground grid. Local defects such as disconnected risers or corroded connections may remain undetected.
-
-#### Can an Earthing Health Assessment be carried out without requiring a power shutdown?
-
-JEF describes its assessment methodology as designed for live systems, reducing the production impact associated with shutdown-based testing.
-
-#### What is the difference between an earth grid resistance test and a riser integrity test?
-
-An earth-grid resistance measurement evaluates the overall resistance behaviour of the earthing system, while riser-integrity testing focuses on the integrity of individual connections between equipment or structures and the earth grid.
-
-#### What happens if a Comprehensive Earthing Health Assessment identifies defective connections?
-
-JEF's deliverables include identification of anomalies and their locations, assessment of their criticality, and corrective-action recommendations prioritised by safety impact.
-
-#### How often should a Comprehensive Earthing Health Assessment be carried out?
-
-The appropriate assessment interval depends on the installation, operating environment, condition of the earthing system and applicable requirements. JEF's page lists this as an assessment FAQ but does not provide a universal interval in the page content reviewed.
-
-#### What is an acceptable earth resistance value, and how is low earth resistance achieved?
-
-Acceptable earth resistance depends on the electrical installation, design requirements, applicable standards and system conditions. JEF's assessment approach considers the complete earthing system rather than relying only on a single resistance value.
-
-Source:
-https://jeftechno.com/audit-services/earthing-health-assessment
-
-
-## 26. Instrumentation Earthing Audit
-
-JEF provides Instrumentation Earthing Audit services for instrumentation and control (I&C) systems.
-
-The JEF website identifies potential problems including:
-- Surges, spikes and glitches
-- Leakage current
-- Circulating current
-- Differential grid / earth potential
-- Incorrect earthing philosophy
-- Incorrect cabling philosophy
-- Compromised Common Earthing Point (CEP)
-- High shield current
-- EMI and EMF
-- Looping of excess power cables inside panels
-- Unused and unterminated cables
-- Power-quality disturbances
-
-JEF states that its instrumentation-earthing approach can help:
-- Reduce electrical noise and signal disturbance
-- Address ground loops, circulating currents and shield-termination errors
-- Prevent malfunctions, false alarms and nuisance trips
-
-The service is focused on identifying problems that may not be detected through standard electrical testing.
-
-Source:
-https://jeftechno.com/audit-services/instrumentation-system
-
-
-## 27. Lightning Protection Audit
-
-JEF provides Lightning Protection System (LPS) Adequacy Audit services.
-
-The stated objectives include:
-- Measuring lightning risk to the structure and its contents
-- Identifying structures requiring protection
-- Determining the required level of protection
-- Assessing the condition and integrity of an existing LPS
-- Assessing protection against radiated and conducted surges
-- Identifying gaps against relevant standards
-- Recommending corrective actions with BOQ and drawings
-- Developing lightning-risk mitigation measures
-
-### JEF LPS Audit Approach
-
-JEF identifies:
-- Site survey and data collection
-- Lightning risk assessment
-- Inspection of air terminals and down conductors
-- Assessment of internal LPS
-- Assessment of the existing earthing system
-- Cost-optimal recommendations
-- Corrective-action recommendations
-
-### Reference Standards Identified by JEF
-
-- IEC 62305-1:2024
-- IEC 62305-2:2024
-- IEC 62305-3:2024
-- IEC 62305-4:2024
-- IEC 62561 series
-- IEC 61643-11
-- IS/IEC 62305
-- NBC 2016
-- IS 3043
-
-### Lightning Protection Audit FAQs
-
-#### Why is a Lightning Protection System (LPS) Audit necessary at regular intervals?
-
-JEF presents periodic LPS assessment as a way to evaluate lightning risk, system condition, integrity and compliance, and to identify gaps requiring corrective action.
-
-#### Why is an LPS Audit becoming more crucial for modern facilities?
-
-Modern facilities contain electrical, electronic, communication and control systems that can be affected by lightning-related risks and conducted or radiated surges. JEF's audit evaluates the adequacy of the protection system against these risks.
-
-Source:
-https://jeftechno.com/audit-services/lightning-protection-system-adequacy-audit
-
-
-## 28. Electrical and Fire Safety Audit
-
-JEF provides Electrical and Fire Safety Audit services for identifying electrical and fire-related risks in facilities.
-
-The audit includes more than 500 checkpoints and 15+ tests, along with evaluation of maintenance systems, critical records and utility performance.
-
-The website identifies assessment areas including:
-- Insulation health and leakage current analysis
-- Fault-current and protection-system verification
-- Power-quality and load-performance assessment
-- Thermal imaging and preventive diagnostics
-- Lighting and emergency-system assessment
-
-JEF states that the audit helps address compliance, fire risk and personnel safety.
-
-Standards referenced by the service include:
-- CEA Regulations 2023
-- NEC 2023
-- NBC 2016
-
-Source:
-https://www.jeftechno.com/audit-services/electrical-and-fire-safety-audit
-
-
-## 29. Surge Protective Devices
-
-JEF provides Surge Protective Devices (SPDs) for protecting electrical and electronic systems against transient overvoltages.
-
-The JEF website explains that damaging surges can originate from:
-- Lightning-related events
-- Motor starting and stopping
-- Transformer switching
-- Capacitor-bank operations
-- Variable-speed-drive activity
-
-An external Lightning Protection System primarily manages the effects of a direct lightning strike. It does not eliminate all transient overvoltages travelling through power, signal, data or communication cables.
-
-JEF's SPD offering addresses internal protection by limiting transient overvoltages caused by lightning events and switching surges.
-
-### SPD Applications
-
-JEF identifies applications including:
-- Low-voltage AC power lines
-- Signal and instrumentation lines
-- Data and Ethernet networks
-- Telecommunication lines
-- Coaxial and antenna lines
-- DC and photovoltaic system lines
-
-### SPD Types
-
-JEF describes Type 1, Type 2 and Type 3 SPDs as being installed at different points within an electrical installation:
-- Type 1: generally associated with protection at the incoming/main distribution point
-- Type 2: downstream distribution protection
-- Type 3: closer protection for sensitive point-of-use equipment
-
-The selection and arrangement depend on the electrical system, lightning-protection design, exposure to transient overvoltages, equipment sensitivity and applicable standards such as IEC 61643-11.
-
-### SPD FAQs
-
-#### Do I need a Surge Protective Device if I already have an external Lightning Protection System?
-
-Yes. An external LPS primarily manages the effects of a direct lightning strike, while an SPD provides protection against transient overvoltages travelling through electrical, signal, data and communication cables, including internally generated switching surges.
-
-#### What is the difference between Type 1, Type 2 and Type 3 Surge Protective Devices?
-
-The three SPD types are used at different points in an electrical installation. Type 1 is generally associated with incoming/main distribution protection, Type 2 with downstream distribution protection, and Type 3 with protection closer to sensitive equipment.
-
-#### What types of electrical and communication lines require Surge Protection Devices?
-
-JEF identifies low-voltage AC power lines, signal and instrumentation lines, data and Ethernet networks, telecommunication lines, coaxial and antenna lines, and DC and photovoltaic system lines.
-
-#### Why are Surge Protective Devices important for industrial and commercial electrical systems?
-
-SPDs help protect electrical and electronic equipment from transient overvoltages caused by lightning and switching events. Industrial electrical operations such as motors, transformers, capacitor banks and variable-speed drives can generate repeated switching transients.
-
-#### How do I choose the right Surge Protective Device for my electrical system?
-
-Selection depends on the type of electrical or electronic line, system configuration, expected surge exposure, equipment sensitivity and applicable protection requirements and standards.
-
-Source:
-https://jeftechno.com/Products/surge-protective-devices
-
-
-## 30. ESE NIMBUS Lightning Protection
-
-JEF presents NIMBUS as a series of Early Streamer Emission (ESE) lightning rods with an electronic early streamer emission system.
-
-The JEF website states:
-- NIMBUS is an ESE lightning-protection solution.
-- Configurations include emission times of 15 μs, 30 μs, 45 μs and 60 μs.
-- The stated protection radius is up to 100 metres, depending on configuration.
-- The system has been tested with lightning currents up to 200 kA (10/350 μs).
-- AISI 316 stainless steel and non-expendable components are identified.
-- The products are tested and certified by independent laboratories.
-- An extended 10-year warranty is stated.
-- JEF states that NIMBUS protects more than 45,000 installations worldwide.
-
-### ESE NIMBUS FAQs
-
-#### What is ESE (Early Streamer Emission) Lightning Protection?
-
-JEF describes ESE lightning protection as external lightning protection technology using an ESE air terminal to initiate an upward streamer and help intercept a lightning discharge before it reaches the protected structure.
-
-#### How does an ESE Lightning Rod protect a large area?
-
-The protection radius depends on factors including ESE emission time, installation height, protection level and site configuration. JEF identifies NIMBUS configurations with emission times of 15 μs, 30 μs, 45 μs and 60 μs and a stated protection radius of up to 100 metres.
-
-#### What is the lightning-current testing capacity of the NIMBUS ESE Lightning Protection System?
-
-JEF states that NIMBUS has been tested with lightning currents up to 200 kA using a 10/350 μs waveform.
-
-#### Does the NIMBUS ESE Lightning Rod comply with NFC 17-102?
-
-The JEF FAQ specifically asks about compliance with NFC 17-102. The page content reviewed does not provide the complete answer, so no additional compliance claim is included here.
-
-Source:
-https://jeftechno.com/Products/ese-lightning-protection
-
-
-## 31. Final Website Resource Map
-
-### Company
-- About JEF: https://jeftechno.com/about-us
-- Leadership Team: https://jeftechno.com/leadership-team
-- About JEF FAQs: https://jeftechno.com/about-us/faq
-
-### Consulting Services
-- Consulting Services: https://jeftechno.com/consulting-services
-- Power System Studies: https://jeftechno.com/power-system-studies
-- Industrial Power System Studies: https://jeftechno.com/industrial
-- Renewable Power System Studies: https://jeftechno.com/renewable
-- Earthing / Grounding Studies: https://jeftechno.com/earthing-system
-- Lightning Protection Studies: https://jeftechno.com/lightning-protection-system
-- EMI & EMC: https://jeftechno.com/emi-emc
-- Root Cause Analysis: https://jeftechno.com/root-cause-analysis
-
-### Audit Services
-- Audit Services: https://jeftechno.com/audit-services
-- Earthing Health Assessment: https://jeftechno.com/audit-services/earthing-health-assessment
-- Instrumentation Earthing Audit: https://jeftechno.com/audit-services/instrumentation-system
-- Lightning Protection Audit: https://jeftechno.com/audit-services/lightning-protection-system-adequacy-audit
-- Electrical & Fire Safety Audit: https://jeftechno.com/audit-services/electrical-and-fire-safety-audit
-- Power Quality Studies: https://jeftechno.com/power-quality-studies
-
-### Products
-- Products: https://jeftechno.com/Products
-- JEF Shield: https://jeftechno.com/Products/JEF-shield
-- CLPS: https://jeftechno.com/Products/clps-products
-- ESE Lightning Protection: https://jeftechno.com/Products/ese-lightning-protection
-- Surge Protective Devices: https://jeftechno.com/Products/surge-protective-devices
-- Earthing Studies: https://jeftechno.com/Products/earthing-studies
-- Lightning Protection Studies: https://jeftechno.com/Products/lightning-protection-studies
-
-## 32. Source and Accuracy Rules
-
-This file is intended as a detailed AI-readable representation of publicly available JEF Techno website information.
-
-Information should be treated according to the following hierarchy:
-
-1. Current JEF website page content
-2. JEF-published technical/product information
-3. JEF FAQ content
-4. Existing JEF website resource links
-
-Company figures, technical specifications, standards, locations, leadership information, service descriptions, product descriptions and FAQ answers should be updated when the corresponding JEF website content changes.
-
-Where a JEF FAQ question is visible but its answer is not available in the reviewed source, the answer should not be invented.
-
-Where a technical specification is stated by JEF, the wording and numerical value should be preserved accurately.
-
-This document is complementary to the JEF website and is intended to make JEF's publicly presented information easier for AI systems to retrieve, understand and reference.
