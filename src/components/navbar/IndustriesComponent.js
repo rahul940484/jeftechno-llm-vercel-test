@@ -2,22 +2,26 @@
 
 import React from "react";
 import Link from "next/link";
+import useCityPath from "@/components/useCityPath";
+const IndustriesItem = ({ path, icon, text }) => {
+  const withCity = useCityPath();
 
-const IndustriesItem = ({ path, icon, text }) => (
-  <div className="flex gap-4 items-center mt-8 first:mt-10 transition-all duration-500 ease-in-out">
-    <img
-      loading="lazy"
+  return (
+    <div className="flex gap-4 items-center mt-8 first:mt-10 transition-all duration-500 ease-in-out">
+      <img
+        loading="lazy"
       src={icon}
       
       className="object-contain shrink-0 self-stretch my-auto w-9 aspect-square"
      alt="Image"/>
-    <Link href={path}>
+    <Link href={withCity(path)}>
       <div className="text-xs self-stretch hover:text-gray-400 my-auto uppercase">
         {text}
       </div>
     </Link>
   </div>
 );
+}
 
 const IndustriesComponent = () => {
   const industries = [

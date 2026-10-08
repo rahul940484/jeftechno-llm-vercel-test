@@ -3,10 +3,11 @@
 import React, { useState, useContext } from "react";
 import Link from "next/link";
 import { TranslationContext } from "../../context/TranslationContext";
+import useCityPath from "@/components/useCityPath";
 
 // Accept onClose prop from parent component
 const MobileMenu = ({ onClose }) => {
-
+  const withCity = useCityPath();
   const [activeMenu, setActiveMenu] = useState("main");
   const [expandedItems, setExpandedItems] = useState({});
 
@@ -78,7 +79,7 @@ const MobileMenu = ({ onClose }) => {
           item.path ? (
             <Link
               key={index}
-              href={item.path}
+              href={withCity(item.path)}
               onClick={onClose}
               target={item.newTab ? "_blank" : undefined}      // 👈 अगर newTab true है तो "_blank" लगेगा
               rel={item.newTab ? "noopener noreferrer" : undefined}
@@ -125,7 +126,7 @@ const MobileMenu = ({ onClose }) => {
           <span>ABOUT</span>
         </div>
         {faqData.about.map((item, index) => (
-          <Link key={index} href={item.path} onClick={onClose}>
+          <Link key={index} href={withCity(item.path)} onClick={onClose}>
             <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
               {item.label}
             </div>
@@ -151,7 +152,7 @@ const MobileMenu = ({ onClose }) => {
         </div>
         {faqData.business.map((item, index) => (
           item.path ? (
-            <Link key={index} href={item.path} onClick={onClose}>
+            <Link key={index} href={withCity(item.path)} onClick={onClose}>
               <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
                 <span>{item.label}</span>
               </div>
@@ -192,7 +193,7 @@ const MobileMenu = ({ onClose }) => {
           <span>OUR PRODUCTS</span>
         </div>
         {faqData.products.map((item, index) => (
-          <Link key={index} href={item.path} onClick={onClose}>
+          <Link key={index} href={withCity(item.path)} onClick={onClose}>
             <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
               <span>{item.label}</span>
             </div>
@@ -217,7 +218,7 @@ const MobileMenu = ({ onClose }) => {
           <span>AUDIT SERVICES</span>
         </div>
         {faqData.audit.map((item, index) => (
-          <Link key={index} href={item.path} onClick={onClose}>
+          <Link key={index} href={withCity(item.path)} onClick={onClose}>
             <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
               <span>{item.label}</span>
             </div>
@@ -266,7 +267,7 @@ const MobileMenu = ({ onClose }) => {
                  loading="lazy" />
               </div>
             ) : item.path ? (
-              <Link href={item.path} onClick={onClose}>
+              <Link href={withCity(item.path)} onClick={onClose}>
                 <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
                   <span>{item.label}</span>
                 </div>
@@ -292,7 +293,7 @@ const MobileMenu = ({ onClose }) => {
             {item.subItems && expandedItems[item.label] && (
               <div className="bg-[#262626]">
                 {item.subItems.map((sub, i) => (
-                  <Link key={i} href={sub.path} onClick={onClose}>
+                  <Link key={i} href={withCity(sub.path)} onClick={onClose}>
                     <div className="flex justify-between items-center px-12 py-4 border-b border-gray-800 cursor-pointer text-sm text-gray-300">
                       {sub.label}
                     </div>
@@ -321,7 +322,7 @@ const MobileMenu = ({ onClose }) => {
           <span>INDUSTRIES</span>
         </div>
         {faqData.industries.map((item, index) => (
-          <Link key={index} href={item.path} onClick={onClose}>
+          <Link key={index} href={withCity(item.path)} onClick={onClose}>
             <div className="flex justify-between items-center px-6 py-5 border-b border-gray-700 cursor-pointer">
               <span>{item.label}</span>
             </div>

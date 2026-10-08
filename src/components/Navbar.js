@@ -11,8 +11,10 @@ import AboutSection from "./navbar/AboutSection";
 import ServicesComponent from "./navbar/ServicesComponent";
 import IndustriesComponent from "./navbar/IndustriesComponent";
 import MobileMenu from "./navbar/MobileMenu";
+import useCityPath from "@/components/useCityPath";
 
 const Navbar = () => {
+  const withCity = useCityPath();
   const { isArabic, toggleTranslation } = useContext(TranslationContext);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const pathname = usePathname();

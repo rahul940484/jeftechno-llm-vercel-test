@@ -5,13 +5,14 @@ import Link from 'next/link';
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { usePathname } from 'next/navigation';
+import useCityPath from "@/components/useCityPath";
 
 
 gsap.registerPlugin(ScrollTrigger);
 
 function MainFooter() {
 
-
+    const withCity = useCityPath();
     useEffect(() => {
         // Select all elements with the 'X-axis-anm' class and apply staggered animation
         gsap.fromTo(
@@ -45,7 +46,6 @@ function MainFooter() {
         { name: 'India', path: 'https://www.jeftechno.com/' },
         { name: 'UAE', path: 'https://www.jeftechno.com/', newTab: true },
         { name: 'Pan India', path: '/location' },
-
     ];
 
     const itemsBusiness = [
@@ -224,6 +224,7 @@ function Footer() {
 
 
 function Section({ title, items }) {
+    const withCity = useCityPath();
     return (
         <section className="flex card-slider-footer X-axis-card-anm-footer flex-col min-h-[234px] w-full sm:w-[219px]">
 
@@ -236,7 +237,7 @@ function Section({ title, items }) {
                     <li key={index} className="flex flex-col justify-center items-start py-2.5 w-full">
                         <div className="flex items-center">
 
-                            <Link href={item.path} target={item.newTab ? "_blank" : undefined} rel={item.newTab ? "noopener noreferrer" : undefined}>
+                            <Link href={withCity(item.path)} target={item.newTab ? "_blank" : undefined} rel={item.newTab ? "noopener noreferrer" : undefined}>
                                 <div className="self-stretch my-auto transition-colors duration-300 hover:text-[#FF0000]">
                                     {item.name}
                                 </div>
@@ -260,6 +261,7 @@ function Section({ title, items }) {
 
 
 const FAQComponent = () => {
+    const withCity = useCityPath();
     const [faqData, setFaqData] = useState([
         {
             question: "ABOUT",
@@ -423,7 +425,7 @@ const FAQComponent = () => {
                             <ul>
                                 {content.map((item, idx) => (
                                     <li key={idx} className="mb-2">
-                                        <Link href={item.path}
+                                        <Link href={withCity(item.path)}
                                             target={item.newTab ? "_blank" : undefined}
                                             rel={item.newTab ? "noopener noreferrer" : undefined}
                                         >

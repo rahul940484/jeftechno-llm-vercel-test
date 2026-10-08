@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import useCityPath from "@/components/useCityPath";
 
 const navigationItems = [
   { number: "01", title: "About JEF", path: "/about-us" },
@@ -15,6 +16,7 @@ const contentMap = {
 };
 
 const AboutSection = () => {
+  const withCity = useCityPath();
   const [hoveredItem, setHoveredItem] = useState(null);
 
   return (
@@ -33,7 +35,7 @@ const AboutSection = () => {
                       {item.number}
                     </div>
                     <Link
-                      href={item.path || "#"}
+                      href={withCity(item.path || "#")}
                       onMouseEnter={() => setHoveredItem(item.number)}
                       className="self-stretch my-auto text-lg hover:text-gray-400 font-medium text-white"
                       target={item.newTab ? "_blank" : undefined}
@@ -65,7 +67,7 @@ const AboutSection = () => {
                   : "opacity-0 -translate-y-5"
               }`}
             >
-              <Link href="/about-us">
+              <Link href={withCity("/about-us")}>
                 <h2 className="text-xs leading-5 hover:text-gray-400">
                   {hoveredItem ? contentMap[hoveredItem] : "About"}
                 </h2>

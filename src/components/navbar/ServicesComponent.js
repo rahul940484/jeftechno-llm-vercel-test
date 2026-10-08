@@ -2,58 +2,68 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import useCityPath from "@/components/useCityPath";
 
-const ServiceItem = ({ icon, text, path, isVisible }) => (
-  <div
-    className={`flex gap-5 items-center mt-8 first:mt-10 min-h-[50px] transition-all duration-500 ease-in-out ${
-      isVisible
-        ? "opacity-100 translate-y-0 visible"
-        : "opacity-0 translate-y-4 invisible"
-    }`}
-  >
-    <div className="w-14 h-14 flex items-center justify-center shrink-0">
-      <img
-        loading="lazy"
-        src={icon}
-        
-        className="w-full h-full object-contain"
-       alt="Image"/>
-    </div>
+const ServiceItem = ({ icon, text, path, isVisible }) => {
+  const withCity = useCityPath();
 
-    <Link href={path}>
-      <div className="text-xs uppercase tracking-[3.36px] font-medium hover:text-gray-400">
-        {text}
+  return (
+    <div
+      className={`flex gap-5 items-center mt-8 first:mt-10 min-h-[50px] transition-all duration-500 ease-in-out ${
+        isVisible
+          ? "opacity-100 translate-y-0 visible"
+          : "opacity-0 translate-y-4 invisible"
+      }`}
+    >
+      <div className="w-14 h-14 flex items-center justify-center shrink-0">
+        <img
+          loading="lazy"
+          src={icon}
+          className="w-full h-full object-contain"
+          alt="Image"
+        />
       </div>
-    </Link>
-  </div>
-);
 
-const ServiceItem2 = ({ icon, text, path, isVisible }) => (
-  <div
-    className={`flex gap-5 items-center mt-8 first:mt-10 min-h-[50px] transition-all duration-500 ease-in-out ${
-      isVisible
-        ? "opacity-100 translate-y-0 visible"
-        : "opacity-0 translate-y-4 invisible"
-    }`}
-  >
-    <div className="w-14 h-14 flex items-center justify-center shrink-0">
-      <img
-        loading="lazy"
-        src={icon}
-        
-        className="w-full h-full object-contain"
-       alt="Image"/>
+      <Link href={withCity(path)}>
+        <div className="text-xs uppercase tracking-[3.36px] font-medium hover:text-gray-400">
+          {text}
+        </div>
+      </Link>
     </div>
+  );
+};
 
-    <Link href={path}>
-      <div className="text-xs uppercase tracking-[3.36px] font-medium hover:text-gray-400">
-        {text}
+const ServiceItem2 = ({ icon, text, path, isVisible }) => {
+  const withCity = useCityPath();
+
+  return (
+    <div
+      className={`flex gap-5 items-center mt-8 first:mt-10 min-h-[50px] transition-all duration-500 ease-in-out ${
+        isVisible
+          ? "opacity-100 translate-y-0 visible"
+          : "opacity-0 translate-y-4 invisible"
+      }`}
+    >
+      <div className="w-14 h-14 flex items-center justify-center shrink-0">
+        <img
+          loading="lazy"
+          src={icon}
+          className="w-full h-full object-contain"
+          alt="Image"
+        />
       </div>
-    </Link>
-  </div>
-);
+
+      <Link href={withCity(path)}>
+        <div className="text-xs uppercase tracking-[3.36px] font-medium hover:text-gray-400">
+          {text}
+        </div>
+      </Link>
+    </div>
+  );
+};
 
 const ServicesComponent = () => {
+  const withCity = useCityPath();
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
@@ -76,15 +86,15 @@ const ServicesComponent = () => {
   ];
 
   const services3 = [
-    { 
-      icon: "/nav-industrial.png", 
-      text: "Industrial – Power System Studies", 
-      path: "/power-system-studies" },
+    {
+      icon: "/nav-industrial.png",
+      text: "Industrial – Power System Studies",
+      path: "/power-system-studies",
+    },
     {
       icon: "/nav-renewable.png",
       text: "Renewable – Power System Studies",
       path: "/renewable",
-    
     },
     {
       icon: "/nav-rca.png",
@@ -95,7 +105,7 @@ const ServicesComponent = () => {
       icon: "/emi-emc-nav.png",
       text: "EMI & EMC",
       path: "/emi-emc",
-    }
+    },
   ];
 
   return (
@@ -111,7 +121,7 @@ const ServicesComponent = () => {
               >
                 <h2 className="text-lg text-white hover:text-gray-400 tracking-[3.36px]">PRODUCTS</h2>
                 <div className="flex items-center">
-                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2bb3117bb1e657fdbc997cd15e47263db3ce1251843c4a3543e9042a61e0fd2a" alt="2Bb3117Bb1E657Fdbc997Cd15E47263Db3Ce1251843C4A3543E9042A61E0Fd2A" className="w-2"  loading="lazy" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2bb3117bb1e657fdbc997cd15e47263db3ce1251843c4a3543e9042a61e0fd2a" alt="2Bb3117Bb1E657Fdbc997Cd15E47263Db3Ce1251843C4A3543E9042A61E0Fd2A" className="w-2" loading="lazy" />
                 </div>
               </div>
             </header>
@@ -124,7 +134,7 @@ const ServicesComponent = () => {
               >
                 <h2 className="text-lg text-white hover:text-gray-400 tracking-[3.36px]">AUDIT SERVICES</h2>
                 <div className="flex items-center">
-                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2bb3117bb1e657fdbc997cd15e47263db3ce1251843c4a3543e9042a61e0fd2a" alt="2Bb3117Bb1E657Fdbc997Cd15E47263Db3Ce1251843C4A3543E9042A61E0Fd2A" className="w-2"  loading="lazy" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2bb3117bb1e657fdbc997cd15e47263db3ce1251843c4a3543e9042a61e0fd2a" alt="2Bb3117Bb1E657Fdbc997Cd15E47263Db3Ce1251843C4A3543E9042A61E0Fd2A" className="w-2" loading="lazy" />
                 </div>
               </div>
             </header>
@@ -137,7 +147,7 @@ const ServicesComponent = () => {
               >
                 <h2 className="text-lg text-white hover:text-gray-400 tracking-[3.36px]">CONSULTING SERVICES</h2>
                 <div className="flex items-center">
-                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2bb3117bb1e657fdbc997cd15e47263db3ce1251843c4a3543e9042a61e0fd2a" alt="2Bb3117Bb1E657Fdbc997Cd15E47263Db3Ce1251843C4A3543E9042A61E0Fd2A" className="w-2"  loading="lazy" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2bb3117bb1e657fdbc997cd15e47263db3ce1251843c4a3543e9042a61e0fd2a" alt="2Bb3117Bb1E657Fdbc997Cd15E47263Db3Ce1251843C4A3543E9042A61E0Fd2A" className="w-2" loading="lazy" />
                 </div>
               </div>
             </header>
@@ -164,10 +174,10 @@ const ServicesComponent = () => {
                     <div key={index} className="flex flex-col">
                       <div className={`flex gap-5 items-center mt-8 first:mt-10 min-h-[60px] transition-all duration-500 ease-in-out ${isHovered3 ? "opacity-100 translate-y-0 visible" : "opacity-0 translate-y-4 invisible"}`}>
                         <div className="w-14 h-14 flex items-center justify-center shrink-0">
-                          <img loading="lazy" src={service.icon}  className="w-full h-full object-contain"  alt="Image"/>
+                          <img loading="lazy" src={service.icon} className="w-full h-full object-contain" alt="Image" />
                         </div>
                         <div className="flex items-center gap-4">
-                          <Link href={service.path}>
+                          <Link href={withCity(service.path)}>
                             <div className="text-[13px] whitespace-normal uppercase tracking-[3.36px] font-medium hover:text-gray-400">
                               {service.text}
                             </div>
@@ -179,12 +189,12 @@ const ServicesComponent = () => {
                           )}
                         </div>
                       </div>
-                      
+
                       {service.subItems && (
                         <div className={`ml-[72px] mt-4 flex flex-col gap-6 transition-all duration-700 delay-150 ${isHovered3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
                           {service.subItems.map((sub, i) => (
-                            <Link key={i} href={sub.path}>
-                              <div className="text-[13px] whitespace-normal font-medium tracking-[3px] text-white  ml-2 hover:text-[#FF0000] transition-colors duration-300">
+                            <Link key={i} href={withCity(sub.path)}>
+                              <div className="text-[13px] whitespace-normal font-medium tracking-[3px] text-white ml-2 hover:text-[#FF0000] transition-colors duration-300">
                                 {sub.text}
                               </div>
                             </Link>

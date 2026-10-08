@@ -2,14 +2,18 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import useCityPath from "@/components/useCityPath";
 
 interface PageNavigationProps {
   currentPage: string;
 }
 
 export default function Navigation({
+  
   currentPage,
 }: PageNavigationProps) {
+  const withCity = useCityPath();
+
   return (
     <section
       className="
@@ -62,7 +66,7 @@ export default function Navigation({
         >
           {/* HOME */}
           <Link
-            href="/"
+            href={withCity("/")}
             className="
               text-[#FF0000]
               hover:text-white 
