@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import useCityPath from "@/components/useCityPath";
 
 export default function BlogsSection() {
+  const withCity = useCityPath();
   const blogData = [
     {
       id: 2,
@@ -245,7 +247,7 @@ export default function BlogsSection() {
               >
                 April 2026
               </span>
-               <Link href={blogData[0].path}>
+               <Link href={withCity(blogData[0].path)}>
           <div
             className="
               mt-[23px]
@@ -317,6 +319,7 @@ export default function BlogsSection() {
 }
 
 function BlogCard({ imageSrc, title, path }) {
+  const withCity = useCityPath();
   return (
     <article className="w-full flex flex-col">
       {/* IMAGE */}
@@ -382,7 +385,7 @@ function BlogCard({ imageSrc, title, path }) {
         </p>
 
         {/* READ MORE */}
-        <Link href={path}>
+        <Link href={withCity(path)}>
           <div
             className="
               mt-[18px]
