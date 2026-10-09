@@ -287,7 +287,7 @@ const FAQComponent = () => {
             content: [
                 { label: 'India', path: '' },
                 { label: "UAE", path: "https://www.jeftechno.com/", newTab: true },
-                { label: 'USA', path: '' },
+                { name: 'Pan India', path: '/location' },
             ],
             isOpen: false
         },
