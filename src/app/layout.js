@@ -7,9 +7,7 @@ import Script from 'next/script';
 import CookieConsentProvider from "../components/cookie/CookieConsentProvider.jsx";
 import SmoothScroll from '@/components/SmoothScroll';
 import ScrollToTop from '@/components/ScrollToTop';
-import CitySuggestion from "@/components/CitySuggestion";
-
-
+import CitySuggestion from '@/components/CitySuggestion';
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',

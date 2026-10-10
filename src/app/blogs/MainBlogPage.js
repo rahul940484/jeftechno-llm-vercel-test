@@ -48,7 +48,7 @@ const NewsCard = ({ category, title, date, imageUrl, path, index }) => (
 );
 
 const MainBlogPage = () => {
-  const withCity = useCityPath();
+  const cityPath = useCityPath();
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 9;
   const totalPages = Math.ceil(blogPosts.length / blogsPerPage);
@@ -93,11 +93,13 @@ const MainBlogPage = () => {
       {/* Breadcrumbs */}
       <div className="w-full bg-[#2D2E30] py-4 border-t border-white/5">
         <div className="section-container px-4 sm:px-6 lg:px-0 flex flex-wrap items-center gap-2 text-[8px] sm:text-[10px] md:text-xs tracking-tight md:tracking-[1px] uppercase">
-          <Link href={withCity("/")} className="text-white/40 hover:text-[#FF0000]">Home</Link>
+          <Link href={cityPath("/")} className="text-white/40 hover:text-[#FF0000]">
+            Home
+          </Link>
           <span className="text-white/20">›</span>
-          <Link href={withCity("/blogs")} className="text-[#FF0000] hover:text-[#FF0000]">Our Blogs</Link>
-          
-          
+          <Link href={cityPath("/blogs")} className="text-[#FF0000] hover:text-[#FF0000]">
+            Our Blogs
+          </Link>
         </div>
       </div>
 
@@ -117,7 +119,7 @@ const MainBlogPage = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-8 gap-y-12 md:gap-y-16">
           {currentBlogs.map((post, index) => (
-            <NewsCard key={post.path} {...post} path={withCity(post.path)} index={index} />
+            <NewsCard key={post.path} {...post} path={cityPath(post.path)} index={index} />
           ))}
         </div>
 
